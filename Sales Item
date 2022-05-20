@@ -1,0 +1,5 @@
+            sol.[vbak_documentcat] = 'C'
+        and sol.[vbap_rejectionreason] is null
+        and sol.[VBAK_Salesdoctype] not in ('ZFWS','ZFW2','ZSMP','ZXMP','ZFWR','ZXWR')
+        and sol.[KNA1_IndustryCode1] <> '0001'
+        and sol.[MARA_MaterialType] <> 'ZMSC'
