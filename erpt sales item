@@ -1,0 +1,6 @@
+            esi.[VBAK_DocumentCategory] = 'C'
+        and esi.[vbap_rejectionreason] is null
+        and esi.[VBAK_Salesdoctype] not in ('ZFWS','ZFW2','ZSMP','ZXMP','ZFWR','ZXWR')
+        and esi.[KNA1_IndustryCode1] <> '0001'
+        and esi.[MARA_MaterialType] <> 'ZMSC'
+
