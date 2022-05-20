@@ -1,0 +1,4 @@
+bi.[VBRK_SalesOrg] in ('C510','C550')
+and bi.[VBAK_Salesdoctype] not in 'ZFWS','ZFW2','ZSMP','ZXMP','ZFWR','ZXWR'
+and bi.[MARA_MaterialType] not like 'ZMSC'
+and bi.[KNA1_IndustryCode1] <> '0001'
