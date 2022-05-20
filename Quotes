@@ -2,7 +2,6 @@ FROM [cur_mas].[FactQuoteItem] qi
 left join [cur_mdm].[DimCustomerMaster] cm
 on qi.[soldto_id] = cm.[CustomerID]
 where qi.[VBAK_SalesOrg] in ('C510','C550')
-	and qi.[VBAP_ProdConfig] not like '000000000000000000'
-    and qi.[MARA_MaterialType] like 'ZCFG'
+	and qi.[MARA_MaterialType] not like 'ZMSC'
 	and qi.[VBAK_SalesDocType] not in  ('ZFWS','ZFW2','ZSMP','ZXMP','ZFWR','ZXWR')
 	and cm.[IndustryCode1] <> '0001'
